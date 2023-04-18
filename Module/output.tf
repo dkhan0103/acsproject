@@ -3,7 +3,6 @@
 
 
 
-#test
 
 # Output VPC and subnet IDs
 output "vpc_id" {
