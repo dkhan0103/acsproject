@@ -14,8 +14,8 @@ on:
     branches: [ "Staging", "Prod"]
     path:
       - 'Staging/**'
-#   schedule:
-#     - cron: '36 22 * * 3'
+  schedule:
+    - cron: '36 22 * * 3'
 
 jobs:
   tfsec:
