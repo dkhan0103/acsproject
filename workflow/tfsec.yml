@@ -7,9 +7,13 @@ name: tfsec
 
 on:
   push:
-    branches: [ "Staging", Prod ]
+    branches: [ "Staging", "Prod" ]
+    path:
+    - staging/**
   pull_request:
-    branches: [ "Staging" ]
+    branches: [ "Staging", "Prod"]
+    path:
+    - staging/**
   schedule:
     - cron: '36 22 * * 3'
 
