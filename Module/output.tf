@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # Output VPC and subnet IDs
 output "vpc_id" {
   value = aws_vpc.vpc-prod.id
