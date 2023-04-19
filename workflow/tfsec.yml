@@ -9,11 +9,11 @@ on:
   push:
     branches: [ "Staging", "Prod" ]
     path:
-    - staging/**
+    - /workflow/tfsec.yml
   pull_request:
     branches: [ "Staging", "Prod"]
     path:
-    - staging/**
+    - /workflow/tfsec.yml
   schedule:
     - cron: '36 22 * * 3'
 
