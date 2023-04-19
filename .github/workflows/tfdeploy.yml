@@ -108,7 +108,7 @@ jobs:
               })
             }
       - name: Terraform Apply
-#         if: github.ref == 'refs/heads/Prod' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/Staging' && github.event_name == 'push'
         run: terraform apply -input=false tf.plan
         working-directory: Prod/Network # Use your environment folder
         shell: bash
