@@ -42,25 +42,25 @@ jobs:
         id: fmt
         run: terraform fmt 
         continue-on-error: true
-        working-directory: ./Network
+        working-directory: Prod/Network
 
 
       - name: Terraform Init
         id: init
         run: terraform init
-        working-directory: ./Network
+        working-directory: Prod/Network
 
            
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
-        working-directory: ./Network
+        working-directory: Prod/Network
 
     
       - name: Terraform Plan
         id: plan
         run: terraform plan -input=false -no-color -out tf.plan
-        working-directory: ./Network # Use your environment folder
+        working-directory: Prod/Network # Use your environment folder
         continue-on-error: true
 
       - name: Get result
@@ -69,7 +69,7 @@ jobs:
       - name: Terraform Show
         id: show
         run: terraform show -no-color tf.plan 2>&1 > /tmp/plan.txt
-        working-directory: ./Network # Use your environment folder
+        working-directory: Prod/Network # Use your environment folder
           
       - uses: actions/github-script@v6
         if: github.event_name == 'pull_request'
@@ -110,6 +110,6 @@ jobs:
       - name: Terraform Apply
         if: github.ref == 'refs/heads/Prod' && github.event_name == 'pull'
         run: terraform apply -input=false tf.plan
-        working-directory: ./Netwrok # Use your environment folder
+        working-directory: Prod/Netwrok # Use your environment folder
         shell: bash
         
