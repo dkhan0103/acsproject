@@ -1,11 +1,11 @@
 name: tfsec
 'on':
   push:
-    branches:
-      - Staging
-      - Prod
-    paths:
-      - Staging/**
+#     branches:
+#       - Staging
+#       - Prod
+#     paths:
+#       - Staging/**
   pull_request:
     branches:
       - Staging
