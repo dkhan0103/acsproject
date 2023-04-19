@@ -1,17 +1,21 @@
 # Terraform Config file (main.tf). This has provider block (AWS) and config for provisioning one EC2 instance resource.  
 
 terraform {
-required_providers {
-  aws = {
-  source = "hashicorp/aws"
-  version = ">= 3.27"
- }
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.40.0"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = "3.4.3"
+    }
+  }
+  required_version = ">= 1.0.0"
 }
 
-  required_version = ">=0.14"
-} 
 provider "aws" {
-  profile = "default"
+#   profile = "default"
   region = "us-east-1"
 }
 
