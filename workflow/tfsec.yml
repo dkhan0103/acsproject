@@ -9,11 +9,11 @@ on:
   push:
     branches: [ "Staging", "Prod" ]
     path:
-      - Staging/**
+      - 'Staging/**'
   pull_request:
     branches: [ "Staging", "Prod"]
     path:
-      - Staging/**
+      - 'Staging/**'
 #   schedule:
 #     - cron: '36 22 * * 3'
 
