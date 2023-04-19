@@ -1,11 +1,11 @@
 name: "Terraform - Staging"
 # https://gaunacode.com/deploying-terraform-at-scale-with-github-actions
 on:
-#   push:
-#     branches:
-#     - 
-#     paths:
-#     - '**/**'
+  push:
+    branches:
+    - Prod
+    paths:
+    - '**/**'
 
   pull_request:
     branches:
@@ -108,7 +108,7 @@ jobs:
               })
             }
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/Staging' && github.event_name == 'pull_request'
+        if: github.ref == 'refs/heads/Prod' && github.event_name == 'push'
         run: terraform apply -input=false tf.plan
         working-directory: Prod/Network # Use your environment folder
         shell: bash
