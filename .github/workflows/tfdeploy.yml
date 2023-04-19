@@ -1,11 +1,11 @@
 name: "Terraform - Staging"
 # https://gaunacode.com/deploying-terraform-at-scale-with-github-actions
 on:
-#   push:
-#     branches:
-#     - Prod
-#     paths:
-#     - '**/**'
+  push:
+    branches:
+    - Prod
+    paths:
+    - '**/**'
 
   pull_request:
     branches:
