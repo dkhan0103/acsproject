@@ -5,7 +5,7 @@ name: tfsec
       - Staging
       - Prod
     paths:
-      - '/**'
+      - '**/**'
   pull_request:
     branches:
       - Staging
