@@ -5,13 +5,13 @@ name: tfsec
       - Staging
       - Prod
     paths:
-      - Staging/**
+    - Staging/**
   pull_request:
     branches:
       - Staging
       - Prod
     paths:
-      - Staging/**
+    - Staging/**
 #   schedule:
 #     - cron: 36 22 * * 3
 jobs:
