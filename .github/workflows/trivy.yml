@@ -13,11 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Trivy
-        uses: aquasecurity/setup-trivy@v1
-        with:
-          image-ref: docker.io/aquasec/trivy:latest
-
       - name: Run Trivy scan
         run: |
-          trivy --exit-code 1 --severity HIGH,CRITICAL Staging
+          docker run --rm -v $PWD:/target aquasec/trivy --exit-code 1 --severity HIGH,CRITICAL /target:Staging
+
