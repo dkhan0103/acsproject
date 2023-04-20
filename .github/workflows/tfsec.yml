@@ -1,11 +1,12 @@
+#test
 name: tfsec
 'on':
   push:
     branches:
       - Staging
       - Prod
-#     paths:
-#       - Staging/**
+    paths:
+      - '**/**'
   pull_request:
     branches:
       - Staging

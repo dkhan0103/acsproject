@@ -2,6 +2,19 @@
 #   value = aws_instance.acs73026.public_ip
 # }
 
-# output "peer_id" {
-#   value = aws_vpc_peering_connection.VPC1-VPC2.*.id
-# }
+output "public_ip_tf" {
+  value = aws_instance.tfinstance[*].public_ip
+}
+
+output "public_ip_bastion" {
+  value = aws_instance.bastion[*].public_ip
+}
+
+output "public_ip_ansible" {
+  value = aws_instance.ansibleinstance[*].public_ip
+}
+
+output "private_ips" {
+  value = aws_instance.privateinstance[*].private_ip
+}
+
