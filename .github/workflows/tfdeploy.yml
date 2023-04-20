@@ -10,6 +10,7 @@ on:
   pull_request:
     branches:
       - Prod
+    types: [closed]
     paths: 
       - '**/**'
 
@@ -188,7 +189,7 @@ jobs:
               })
             }
       - name: Terraform Apply
-        if: github.event_name == 'pull_request'
+        if: github.event.pull_request.merged == true
         run: terraform apply -input=false tf.plan
         working-directory: Prod/Webserver # Use your environment folder
         shell: bash
