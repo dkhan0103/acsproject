@@ -43,17 +43,6 @@ resource "aws_vpc" "vpc-prod" {
   )
 }
 
-# resource "aws_vpc" "vpc-prod" {
-#   count = var.environment == "prod" ? 1 : 0
-
-#   cidr_block = "10.10.0.0/16"
-
-# tags = merge(
-#     local.default_tags, {
-#       Name = "${var.environment}-VPC"
-#     }
-#   )
-# }
 
 # Create private subnets
 resource "aws_subnet" "private" {
