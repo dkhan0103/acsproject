@@ -11,7 +11,7 @@ This project is done by Mohd Danish Khan, Asif Raja and Harniaz Brar
 - [Using GitHub action for automation](#using-github-action-for-automation)
 
 
-## Using Terraform to Deploy Two webserver in public subnet and two in private subnet
+## Using Terraform to Deploy 4 webserver in public subnet and 2 in private subnet
 
 Instructions on using Terraform to deploy two web servers in public and private subnets.
 
