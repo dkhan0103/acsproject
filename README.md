@@ -13,7 +13,8 @@ Table of Contents
  
 
 Installation
-Include instructions on how to install your project, including any dependencies that need to be installed.
+Install required CI/CD, including any dependencies that need to be installed.
+
 
 Usage
 Include instructions on how to use your project, including any command-line or user-interface instructions.
