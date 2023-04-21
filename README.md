@@ -46,6 +46,12 @@ Deploy the webservers in Public and Private subnet
 
 Instructions on using Ansible to deploy two web servers.
 
+- Install anisble and boto3 dependencies requried to run dynamic inventroy
+- sudo yum install –y ansible
+- sudo pip2.7 install boto3 # install boto3 as per your ansible python version
+- enable_plugins = aws_ec2 # enable inventory
+- ansible-playbook -i aws_ec2.yaml  playbook3.yaml # run the playbook 
+
 ## Using GitHub action
 
 Instructions on using GitHub action.
