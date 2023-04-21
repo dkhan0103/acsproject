@@ -35,7 +35,7 @@ Instructions on using Terraform to deploy two web servers in public and private 
 Deploy the webservers in Public and Private subnet 
 
 - Go to acsproject/prod/Webserver and folloe the steps
-- - terrafrom init # initialize terrform
+- terrafrom init # initialize terrform
 - terraform fmt
 - terraform validate
 - terraform plan 
