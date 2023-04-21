@@ -18,6 +18,30 @@ This project is done by Mohd Danish Khan, Asif Raja and Harniaz Brar
 
 Instructions on using Terraform to deploy two web servers in public and private subnets.
 
+- Clone the repo in your local machine 
+ Use below command 
+ git init 
+ git clone 
+ 
+ ## First deploy the Network required for the project
+ 
+- Go to acsproject/prod/Network directory and follow the steps 
+- terrafrom init # initialize terrform
+- terraform fmt
+- terraform validate
+- terraform plan 
+- terrform apply 
+ 
+## Deploy the webservers in Public and Private subnet 
+
+- Go to acsproject/prod/Webserver and folloe the steps
+- - terrafrom init # initialize terrform
+- terraform fmt
+- terraform validate
+- terraform plan 
+- terrform apply 
+
+
 ## Using Ansible to Deploy two webserver
 
 Instructions on using Ansible to deploy two web servers.
