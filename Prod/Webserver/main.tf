@@ -51,10 +51,7 @@ locals {
 
 }
 
-# module "vpc-dev" {
-#   source              = "/home/ec2-user/environment"
-#   environment                 = "nonprod"
-# }
+
 
 resource "aws_instance" "tfinstance" {
    

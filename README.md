@@ -1,36 +1,62 @@
-Welcome to the README file for ACS370 FInial Project  GitHub repository! 
+# Welcome to the README file for ACS370 Final Project GitHub repository!
 
 This project is done by Mohd Danish Khan, Asif Raja and Harniaz Brar
 
+## Project Title
+## Two-Tier Web Application Automation using Terraform, Ansible and GitHub
 
-Project Title
-Two-Tier Web Application Automation using Terraform, Ansible and GitHub
+## Table of Contents
+- [Using Terraform to Deploy Two webserver in public subnet and two in private subnet](#using-terraform-to-deploy-two-webserver-in-public-subnet-and-two-in-private-subnet)
+- [Using Ansible to Deploy two webserver](#using-ansible-to-deploy-two-webserver)
+- [Using GitHub action for automation](#using-github-action-for-automation)
 
-Table of Contents
-•	Using Terraform to Deploy Two webserver in public subnet and two in private subnet
-•	Using Ansible to Deploy two webserver
-•	Using GitHub action 
+
+## Using Terraform to Deploy 4 webserver in public subnet and 2 in private subnet
+
+Instructions on using Terraform to deploy two web servers in public and private subnets.
+
+- Clone the repo in your local machine 
+ Use below command 
+- git init 
+- git clone https://github.com/dkhan0103/acsproject.git
  
+ First deploy the Network required for the project
+ 
+- Go to acsproject/prod/Network directory and follow the steps 
+- terrafrom init # initialize terrform
+- terraform fmt
+- terraform validate
+- terraform plan 
+- terrform apply 
+ 
+Deploy the webservers in Public and Private subnet 
 
-Installation
-Include instructions on how to install your project, including any dependencies that need to be installed.
+- Go to acsproject/prod/Webserver and folloe the steps
+- terrafrom init # initialize terrform
+- terraform fmt
+- terraform validate
+- terraform plan 
+- terrform apply 
 
-Usage
-Include instructions on how to use your project, including any command-line or user-interface instructions.
 
-Contributing
-Include information on how people can contribute to your project, such as by reporting bugs or submitting pull requests.
+## Using Ansible to Deploy two webserver
 
-Credits
-Include a list of any people or resources that helped you create your project.
+Instructions on using Ansible to deploy two web servers.
 
-License
-Include information on the license for your project. For example, you might use a standard open-source license like the MIT License.
+- Install ansible and boto3 dependencies requried to run dynamic inventory
+- sudo yum install –y ansible
+- sudo pip2.7 install boto3 # install boto3 as per your ansible python version
+- enable_plugins = aws_ec2 # enable inventory
+- ansible-playbook -i aws_ec2.yaml  playbook3.yaml # run the playbook 
 
-Contact
-Include contact information for yourself or your team, so people can reach out to you with questions or feedback.
+## Using GitHub action
 
-Conclusion
-A good README can make all the difference in whether people decide to use or contribute to your project, so take the time to make it clear and helpful. Good luck with your project!
+Instructions on using GitHub action.
+- Once you are done with Terraform and anisble deployment you can push the code to remote repo 
+- git push
+- Git action is triggered as follows:
+- trivy and tfsec workflow will trigger on any push or pull_request
+- tfdeploy workflow will be trigger when the approver confirm the merge request
+
 
 
