@@ -13,7 +13,19 @@ Table of Contents
  
 
 Installation
-Install required CI/CD, including any dependencies that need to be installed.
+Install required Terraform and Ansible CI/CD, including Boto3 dependencies that is need to be installed.
+
+#Check the terraform version installed 
+
+terraform version
+
+
+#Installing Ansible
+
+sudo apt update
+sudo apt install ansible
+ansible --version
+
 
 
 Usage
