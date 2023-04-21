@@ -24,10 +24,7 @@ locals {
   default_tags = merge(var.default_tags, { "environment" = var.environment })
 }
 
-# # Data source for availability zones in us-east-1
-# data "aws_availability_zones" "available" {
-#   state = "available"
-# }
+
 
 
 
@@ -59,19 +56,7 @@ resource "aws_subnet" "private" {
   )
 }
 
-# resource "aws_subnet" "prod_private" {
-#   count = var.environment == "prod" ? length(var.prod_private_subnet_cidrs) : 0
 
-#   cidr_block = var.prod_private_subnet_cidrs[count.index]
-#   availability_zone = data.aws_availability_zones.available.names[1]
-#   vpc_id     = aws_vpc.vpc-prod[0].id
-
-#   tags = merge(
-#     local.default_tags, {
-#       Name = "${var.environment}-private-subnet-${count.index + 1}"
-#     }
-#   )
-# }
 
 # Create public subnets
 resource "aws_subnet" "public" {
@@ -102,18 +87,7 @@ resource "aws_internet_gateway" "gw-prod" {
 }
 
 
-# # Create internet gateway
-# resource "aws_internet_gateway" "gw-prod" {
-#   count = var.environment == "prod" ? 1 : 0
 
-#   vpc_id = aws_vpc.vpc-prod[0].id
-
-#   tags = merge(local.default_tags,
-#     {
-#       "Name" = "${var.environment}-igw"
-#     }
-#   )
-# }
 
 # Create public route table and association
 resource "aws_route_table" "public" {
