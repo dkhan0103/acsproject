@@ -21,12 +21,6 @@ variable "private_subnet_cidrs" {
   description = "Non Prod Private Subnet CIDRs"
 }
 
-# #Provision private subnets in custom prod VPC
-# variable "prod_private_subnet_cidrs" {
-#   default     = ["10.10.1.0/24", "10.10.2.0/24"]
-#   type        = list(string)
-#   description = "Prod Private Subnet CIDRs"
-# }
 
 #Provision public subnets in custom VPC
 variable "public_cidr_blocks" {
