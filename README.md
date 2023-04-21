@@ -1,33 +1,23 @@
-Welcome to the README file for ACS370 FInial Project  GitHub repository! 
-
-This project is done by Mohd Danish Khan, Asif Raja and Harniaz Brar
-
+Welcome to the README file for ACS370 Final Project GitHub repository!
+This project is done by Mohd Danish Khan, Asif Raja, and Harniaz Brar.
 
 Project Title
-Two-Tier Web Application Automation using Terraform, Ansible and GitHub
+Two-Tier Web Application Automation using Terraform, Ansible, and GitHub
 
 Table of Contents
-•	Using Terraform to Deploy Two webserver in public subnet and two in private subnet
-•	Using Ansible to Deploy two webserver
-•	Using GitHub action 
- 
-
+Using Terraform to Deploy Two web servers in public subnet and two in private subnet
+Using Ansible to Deploy two web servers
+Using GitHub action
 Installation
-Install required Terraform and Ansible CI/CD, including Boto3 dependencies that is need to be installed.
+Install required Terraform and Ansible CI/CD, including Boto3 dependencies that need to be installed.
 
-#Check the terraform version installed 
-
-terraform version
-
-
-#Installing Ansible
-
+Check the terraform version installed: terraform version
+Installing Ansible:
+sql
+Copy code
 sudo apt update
 sudo apt install ansible
 ansible --version
-
-
-
 Usage
 Include instructions on how to use your project, including any command-line or user-interface instructions.
 
@@ -45,5 +35,8 @@ Include contact information for yourself or your team, so people can reach out t
 
 Conclusion
 A good README can make all the difference in whether people decide to use or contribute to your project, so take the time to make it clear and helpful. Good luck with your project!
+
+
+
 
 
