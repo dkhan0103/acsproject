@@ -20,10 +20,10 @@ Instructions on using Terraform to deploy two web servers in public and private 
 
 - Clone the repo in your local machine 
  Use below command 
- git init 
- git clone 
+- git init 
+- git clone 
  
- ## First deploy the Network required for the project
+ # First deploy the Network required for the project
  
 - Go to acsproject/prod/Network directory and follow the steps 
 - terrafrom init # initialize terrform
@@ -32,7 +32,7 @@ Instructions on using Terraform to deploy two web servers in public and private 
 - terraform plan 
 - terrform apply 
  
-## Deploy the webservers in Public and Private subnet 
+# Deploy the webservers in Public and Private subnet 
 
 - Go to acsproject/prod/Webserver and folloe the steps
 - - terrafrom init # initialize terrform
