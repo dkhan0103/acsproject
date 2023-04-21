@@ -9,10 +9,7 @@ This project is done by Mohd Danish Khan, Asif Raja and Harniaz Brar
 - [Using Terraform to Deploy Two webserver in public subnet and two in private subnet](#using-terraform-to-deploy-two-webserver-in-public-subnet-and-two-in-private-subnet)
 - [Using Ansible to Deploy two webserver](#using-ansible-to-deploy-two-webserver)
 - [Using GitHub action for automation](#using-github-action-for-automation)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Contact](#contact)
+
 
 ## Using Terraform to Deploy Two webserver in public subnet and two in private subnet
 
@@ -55,8 +52,10 @@ Instructions on using Ansible to deploy two web servers.
 ## Using GitHub action
 
 Instructions on using GitHub action.
+- Once you are done with Terraform and anisble deployment you can push the code to remote repo 
+- Git action is triggered as follows
+- trivy and tfsec workflow will trigger on any push or pull_request
+- tfdeploy workflow will be trigger when the approver confirm the merge request
 
-## Installation
 
-Install required Terraform and Ansible CI/CD, including Boto3 dependencies that need to be installed.
 
