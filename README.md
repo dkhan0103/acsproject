@@ -3,17 +3,15 @@
 This project is done by Mohd Danish Khan, Asif Raja and Harniaz Brar
 
 ## Project Title
-Two-Tier Web Application Automation using Terraform, Ansible and GitHub
+## Two-Tier Web Application Automation using Terraform, Ansible and GitHub
 
 ## Table of Contents
 - [Using Terraform to Deploy Two webserver in public subnet and two in private subnet](#using-terraform-to-deploy-two-webserver-in-public-subnet-and-two-in-private-subnet)
 - [Using Ansible to Deploy two webserver](#using-ansible-to-deploy-two-webserver)
-- [Using GitHub action](#using-github-action)
+- [Using GitHub action for automation](#using-github-action-for-automation)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
 - [Contact](#contact)
 
 ## Using Terraform to Deploy Two webserver in public subnet and two in private subnet
