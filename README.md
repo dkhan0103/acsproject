@@ -43,7 +43,7 @@ Deploy the webservers in Public and Private subnet
 
 Instructions on using Ansible to deploy two web servers.
 
-- Install anisble and boto3 dependencies requried to run dynamic inventroy
+- Install ansible and boto3 dependencies requried to run dynamic inventory
 - sudo yum install –y ansible
 - sudo pip2.7 install boto3 # install boto3 as per your ansible python version
 - enable_plugins = aws_ec2 # enable inventory
@@ -53,7 +53,8 @@ Instructions on using Ansible to deploy two web servers.
 
 Instructions on using GitHub action.
 - Once you are done with Terraform and anisble deployment you can push the code to remote repo 
-- Git action is triggered as follows
+- git push
+- Git action is triggered as follows:
 - trivy and tfsec workflow will trigger on any push or pull_request
 - tfdeploy workflow will be trigger when the approver confirm the merge request
 
