@@ -1,9 +1,18 @@
 name: Trivy Scan
 
-on:
+'on':
   push:
     branches:
       - Staging
+      - Prod
+    paths:
+      - '**/**'
+  pull_request:
+    branches:
+      - Staging
+      - Prod
+    paths:
+      - Staging/**
 
 jobs:
   trivy-scan:
